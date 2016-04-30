@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>404 Not Found</title>
+    <style>
+      body {
+        background-color: #b784a7;
+        color: white;
+        font-family: Helvetica;
+      }
+      h1 {
+        font-size: 80pt;
+      }
+      h3 {
+        font-size: 32pt;
+      }
+      h3#sorry {
+        text-align: right;
+        padding-right: 4%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>YOU'VE BEEN TRICKED</h1>
+    <h3 id="sorry">That page doesn't actually exist. Sorry!</h3>
+  </body>
+</html>
+
