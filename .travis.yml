@@ -1,0 +1,3 @@
+language: generic
+after_success:
+    "find ./ -type f -exec curl -u $FTP_USER:$FTP_PASS --ftp-create-dirs -T {} ftp://allderek.com/public_html/treble/{} \;"
