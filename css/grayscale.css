@@ -256,7 +256,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -273,7 +273,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -294,7 +294,7 @@ div.trebles-lawn {
     content:url(../img/trebles-lawn.jpg) no-repeat center center fixed;
     width: 80%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     border-style: solid;
     border-width: 3px;
     border-color: #D2963B;
