@@ -1,0 +1,96 @@
+/**
+  CMU TREBLEMAKERS WEBSITE
+  COPYRIGHT DEREK BROWN 2016
+  ALL RIGHTS RESERVED.
+**/
+
+/** FONTS **/
+  @font-face {
+  	font-family: 'COCOGOOSE';
+  	src: url('font/COCOGOOSE.eot');
+  	src: local('COCOGOOSE'),
+  		url('font/COCOGOOSE.eot?#iefix') format('embedded-opentype'),
+  		url('font/COCOGOOSE.woff') format('woff'),
+  		url('font/COCOGOOSE.ttf') format('truetype'),
+  		url('font/COCOGOOSE.svg#COCOGOOSE') format('svg');
+  	font-weight: normal;
+  	font-style: normal;
+  }
+
+  h1{
+    font-family:'COCOGOOSE', sans-serif;
+  }
+
+/** BODY **/
+  body{
+    margin:0;
+    padding:0;
+    top:0;left:0;right:0;bottom:0;
+    height:100%;
+    width:100%;
+  }
+
+  section{
+    position:relative;
+    width:100%;
+  }
+
+/** COVER **/
+section#cover{
+
+  iframe{
+    max-height:100vh !important;
+
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    pointer-events: none;
+  }
+
+  .cover_title{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+
+    width:500px;
+    height:100vh;
+
+    margin:0 auto;
+
+    img{
+      width:300px;
+    }
+  }
+
+}
+
+/** MENU **/
+  .uk-navbar{
+    height:60px;
+    background-color:#111;
+
+    .uk-navbar-nav{
+      li{
+        height:60px;
+
+        a {
+          height:60px;
+          line-height:60px;
+
+          font-size:16pt !important;
+          font-family:'COCOGOOSE', sans-serif;
+          color:#e1c448 !important;
+
+          &:hover{
+            background-color:#222;
+          }
+        }
+      }
+    }
+  }
+
+  /** ABOUT **/
+  section#about{
+    background-color:#444;
+  }

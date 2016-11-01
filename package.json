@@ -1,0 +1,23 @@
+{
+  "name": "treblemakers",
+  "version": "1.0.0",
+  "description": "Website for CMU Treblemakers A Cappella Group",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-image-resize": "^0.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CMUTreblemakers/website.git"
+  },
+  "author": "Derek Brown",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/CMUTreblemakers/website/issues"
+  },
+  "homepage": "https://github.com/CMUTreblemakers/website#readme"
+}
