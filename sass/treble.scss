@@ -53,13 +53,35 @@ section#cover{
     top:0;
     bottom:0;
 
-    width:500px;
-    height:100vh;
-
+    width:100%;
+    max-width:70%;
     margin:0 auto;
+    height:100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media(min-width:765px){
+      height:85vh !important;
+      align-items: flex-end !important;
+    }
 
     img{
-      width:300px;
+      width:400px;
+      max-width:80%;
+    }
+
+    .text{
+
+      height:130px;
+      text-align: left;
+      vertical-align: top;
+
+      font-size:16pt !important;
+      font-family:'COCOGOOSE', sans-serif;
+      color:#fff !important;
     }
   }
 
@@ -68,7 +90,6 @@ section#cover{
 /** MENU **/
   .uk-navbar{
     height:60px;
-    background-color:#111;
 
     .uk-navbar-nav{
       li{
@@ -80,11 +101,7 @@ section#cover{
 
           font-size:16pt !important;
           font-family:'COCOGOOSE', sans-serif;
-          color:#e1c448 !important;
 
-          &:hover{
-            background-color:#222;
-          }
         }
       }
     }

@@ -42,26 +42,39 @@ section#cover .cover_title {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 500px;
-  height: 100vh;
-  margin: 0 auto; }
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 765px) {
+    section#cover .cover_title {
+      height: 85vh !important;
+      align-items: flex-end !important; } }
   section#cover .cover_title img {
-    width: 300px; }
+    width: 400px;
+    max-width: 80%; }
+  section#cover .cover_title .text {
+    height: 130px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 16pt !important;
+    font-family: 'COCOGOOSE', sans-serif;
+    color: #fff !important; }
 
 /** MENU **/
 .uk-navbar {
-  height: 60px;
-  background-color: #111; }
+  height: 60px; }
   .uk-navbar .uk-navbar-nav li {
     height: 60px; }
     .uk-navbar .uk-navbar-nav li a {
       height: 60px;
       line-height: 60px;
       font-size: 16pt !important;
-      font-family: 'COCOGOOSE', sans-serif;
-      color: #e1c448 !important; }
-      .uk-navbar .uk-navbar-nav li a:hover {
-        background-color: #222; }
+      font-family: 'COCOGOOSE', sans-serif; }
 
 /** ABOUT **/
 section#about {

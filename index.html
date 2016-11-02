@@ -31,16 +31,27 @@
 
   <!-- COVER VIDEO -->
   <section id="cover">
-    <iframe id="cover_video" src="https://www.youtube.com/embed/UNepm-gBbbU?autoplay=1&loop=1&controls=0&rel=0&showinfo=0" width="100%" height="800px" frameborder="0" volume="0" allowfullscreen></iframe>
+
+    <!-- Cover Video on Large Devices -->
+    <iframe id="cover_video" class="uk-hidden-small" src="https://www.youtube.com/embed/UNepm-gBbbU?rel=0&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;playlist=UNepm-gBbbU" width="100%" height="800px" frameborder="0" volume="0" allowfullscreen></iframe>
+
+    <!-- Cover Photo on Small Devices -->
+    <img id="cover_photo" class="uk-visible-small" src="img/cover.jpg" width="100%"/>
+
     <div class="cover_title">
-      <img src="img/logo.gold.sm.png" />
+      <img src="img/logo.gold.sm.outline.png" />
+      <div class="text">
+          Co-Ed.</br>
+          Competitive.</br>
+          A Cappella.
+      </div>
     </div>
   </section>
 
   <!-- MENU -->
-  <nav class="uk-navbar" data-uk-sticky="{boundary: true}">
-      <div style="width:800px; margin:0 auto">
-        <ul class="uk-navbar-nav uk-flex-center">
+  <nav class="uk-navbar" data-uk-sticky="{boundary: true}" style="z-index:1000;">
+      <div class="uk-flex uk-flex-center">
+        <ul class="uk-navbar-nav">
             <li><a href="">ABOUT</a></li>
             <li><a href="">AUDITION</a></li>
             <li><a href="">DATES</a></li>
