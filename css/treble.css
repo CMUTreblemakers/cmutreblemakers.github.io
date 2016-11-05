@@ -32,8 +32,6 @@ section {
 /** COVER **/
 section#cover iframe {
   max-height: 100vh !important;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   pointer-events: none; }
 
 section#cover .cover_title {
@@ -50,7 +48,7 @@ section#cover .cover_title {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-  @media (min-width: 765px) {
+  @media (min-width: 760px) {
     section#cover .cover_title {
       height: 85vh !important;
       align-items: flex-end !important; } }

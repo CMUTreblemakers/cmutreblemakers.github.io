@@ -41,8 +41,6 @@ section#cover{
   iframe{
     max-height:100vh !important;
 
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
     pointer-events: none;
   }
 
@@ -63,7 +61,7 @@ section#cover{
     justify-content: center;
     align-items: center;
 
-    @media(min-width:765px){
+    @media(min-width:760px){
       height:85vh !important;
       align-items: flex-end !important;
     }
