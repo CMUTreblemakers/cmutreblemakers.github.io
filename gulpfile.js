@@ -35,10 +35,10 @@ gulp.task('bower', function() {
 
 /* MEMBER IMAGES */
   gulp.task('members', function(){
-    return gulp.src(['./img/members/*.jpg', '!./img/members/*.sm.jpg', '!./img/members/*.lg.jpg'])
+    return gulp.src(['./img/members/*.jpg', '!./img/members/*.sm.jpg'])
                .pipe(imageResize({
-                    width: 150,
-                    height: 150,
+                    width: 300,
+                    height: 440,
                     crop: true,
                     format: 'jpg'
                 }))

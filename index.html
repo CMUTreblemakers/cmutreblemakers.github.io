@@ -21,10 +21,15 @@
     <script type="text/javascript" src="lib/uikit/js/uikit.min.js"></script>
     <link rel="stylesheet" type="text/css" href="lib/uikit/css/uikit.min.css">
 
+    <!-- Sticky Menu -->
     <script type="text/javascript" src="lib/uikit/js/components/sticky.min.js"></script>
+
+    <!-- Parallax Image -->
+    <script type="text/javascript" src="lib/uikit/js/components/parallax.min.js"></script>
 
   <!-- STYLE -->
     <link rel="stylesheet" type="text/css" href="css/treble.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
 </head>
 <body>
@@ -33,13 +38,13 @@
   <section id="cover">
 
     <!-- Cover Video on Large Devices -->
-    <iframe id="cover_video" class="uk-hidden-small" src="https://www.youtube.com/embed/UNepm-gBbbU?rel=0&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;playlist=UNepm-gBbbU" width="100%" height="800px" frameborder="0" volume="0" allowfullscreen></iframe>
+    <iframe id="cover_video" class="uk-hidden-small" src="https://www.youtube.com/embed/P_kIDsF_ziY?rel=0&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;playlist=P_kIDsF_ziY" width="100%" height="750px" frameborder="0" volume="0" allowfullscreen></iframe>
 
     <!-- Cover Photo on Small Devices -->
     <img id="cover_photo" class="uk-visible-small" src="img/cover.jpg" width="100%"/>
 
     <div class="cover_title">
-      <img src="img/logo.gold.sm.outline.png" />
+      <img src="img/logo.png" />
       <div class="text uk-hidden-small">
           Co-Ed.</br>
           Competitive.</br>
@@ -49,23 +54,200 @@
   </section>
 
   <!-- MENU -->
-  <nav class="uk-navbar" data-uk-sticky="{boundary: true}" style="z-index:1000;">
+  <nav class="uk-navbar" data-uk-sticky="{boundary: true}" style="z-index:1000;" data-uk-scrollspy-nav="{smoothscroll:true}">
       <div class="uk-flex uk-flex-center">
-        <ul class="uk-navbar-nav">
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">AUDITION</a></li>
-            <li><a href="">DATES</a></li>
-            <li><a href="">MEMBERS</a></li>
-            <li><a href="">MEDIA</a></li>
-            <li><a href="">CONTACT</a></li>
+        <ul class="uk-navbar-nav uk-hidden-small">
+            <li><a href="#about">ABOUT</a></li>
+            <!-- TODO:audition <li><a href="#audition">AUDITION</a></li> -->
+            <li><a href="#dates">DATES</a></li>
+            <li><a href="#media">MEDIA</a></li>
+            <li><a href="#members">MEMBERS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <ul class="uk-navbar-nav uk-visible-small">
+          <a href="" class="uk-navbar-brand">TREBLEMAKERS</a>
+          <a href="#mobile-menu" class="uk-navbar-toggle" data-uk-offcanvas></a>
         </ul>
       </div>
   </nav>
 
-  <!-- TESTING -->
-  <div style="height:1000px">
-    TEST
+  <div id="mobile-menu" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
+            <li><a href="#about">ABOUT</a></li>
+            <!-- TODO:audition <li><a href="#audition">AUDITION</a></li> -->
+            <li><a href="#dates">DATES</a></li>
+            <li><a href="#media">MEDIA</a></li>
+            <li><a href="#members">MEMBERS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+      </div>
   </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrapper">
+      <div class="uk-grid">
+          <div class="about-text uk-width-1-1">
+            <h1>WE ARE PRETTY GREAT</h1>
+            <img src="img/about.jpg" />
+            <p>
+              We’re the Treblemakers, an award-winning co-ed a cappella group at Carnegie Mellon. Founded in 2010, we’ve quickly grown into a musical force to be reckoned with. We host CMU’s Almost Midnight A Cappella Concert every spring and regularly compete in the International Championship of Collegiate A Cappella. We pride ourselves on being one of the most fun ­loving groups on campus and we push ourselves to be the best we can be.
+            </p>
+            <p>
+              At heart, we’re a close knit group of friends who love to share our passion with each other and our community. Treblemakers is a group for all kinds of singers and all styles of music, and we work together to bring our visions to life. We love new friends, so if you’re interested in singing with us, want us to perform for you, or have any questions, just let us know. We’d love to make Treble with you!
+            </p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDITION -->
+  <section id="audition" data-uk-parallax="{bg: '-350,0'}">
+    <div class="wrapper">
+
+      <h1> YOU ARE PRETTY GREAT </h1>
+      <p>
+        Auditions are from September 8th to September 11th. Slots are filling up fast- so be sure to sign up soon using the link below!
+      </p>
+
+      <h2>WHAT TO EXPECT</h2>
+      <p>
+      Please prepare a verse and a chorus from a song that shows off your voice. We’ll take you through a vocal range exercise and there will be an optional sight reading component. We’re looking for all kinds of talent; so if you beatbox, arrange, choreograph, or have leadership experience, be sure to tell us about it. Send us an email if you have any questions. Relax, we can’t wait to meet you!
+      </p>
+
+      <button class="uk-button uk-button-large" type="button">Sign Up</button>
+
+    </div>
+  </section>
+
+  <!-- DATES -->
+  <section id="dates">
+    <div class="wrapper">
+
+      <h1> UPCOMING DATES </h1>
+      <div class="uk-grid">
+
+        <!-- AMAC -->
+        <div class="event uk-width-1-1">
+          <div class="date">
+            <div class="month">October</div>
+            <div class="day">16</div>
+            <div class="time">7:00PM</div>
+          </div>
+          <div class="description">
+            <h2>AcaPittsburgh <span> | CUC Rangos </span> </h2>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section id="social" class="uk-flex uk-flex-middle uk-flex-center" data-uk-parallax="{bg: '-350,0'}">
+    <div>
+      <center><h2> Follow us! </h2></center>
+      <div class="social-circles uk-flex uk-flex-center">
+        <a href="facebook.com">
+          <i class="uk-icon-facebook"></i>
+        </a>
+        <a href="facebook.com">
+          <i class="uk-icon-twitter"></i>
+        </a>
+        <a href="facebook.com">
+          <i class="uk-icon-instagram"></i>
+        </a>
+        <a href="facebook.com">
+          <i class="uk-icon-snapchat"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA -->
+  <section id="media">
+    <div class="wrapper">
+
+      <h1> MEDIA </h1>
+
+      <div class="uk-grid video-player">
+        <div class="uk-width-1-1">
+          <iframe width="100%" height="540" src="https://www.youtube.com/embed/videoseries?list=PLleQ9j2L9YFiahNP3fiJEZjg31W0eBwhC" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MEMBER -->
+  <section id="members">
+    <div class="wrapper">
+
+      <h1> OUR AMAZING MEMBERS </h1>
+
+      <!-- First Row -->
+      <div class="uk-grid">
+        <div class="uk-width-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/aanders.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Allison Anderson </h3>
+                  Vocal Performance 2017</br>
+                  Alto &amp; Music Director
+              </figcaption>
+          </figure>
+        </div>
+        <div class="uk-width-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/aanders.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Allison Anderson </h3>
+                  Vocal Performance 2017</br>
+                  Alto &amp; Music Director
+              </figcaption>
+          </figure>
+        </div>
+        <div class="uk-width-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/aanders.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Allison Anderson </h3>
+                  Vocal Performance 2017</br>
+                  Alto &amp; Music Director
+              </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+
+      <!-- Third Row -->
+
+      <!-- Fourth Row -->
+
+      <!-- Fifth Row -->
+
+      <!-- Sixth Row -->
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrapper">
+
+      <h1> CONTACT </h1>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+
+  </footer>
 
 </body>
 

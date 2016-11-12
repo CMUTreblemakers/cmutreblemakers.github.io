@@ -4,6 +4,9 @@
   ALL RIGHTS RESERVED.
 **/
 
+/** VARIABLES **/
+$treble-gold: #d2a63b;
+
 /** FONTS **/
   @font-face {
   	font-family: 'COCOGOOSE';
@@ -17,8 +20,16 @@
   	font-style: normal;
   }
 
-  h1{
+  h1,h2 {
     font-family:'COCOGOOSE', sans-serif;
+  }
+
+  h1{
+    color:#D2963B;
+  }
+
+  h2{
+    color:#fff;
   }
 
 /** BODY **/
@@ -28,6 +39,12 @@
     top:0;left:0;right:0;bottom:0;
     height:100%;
     width:100%;
+
+    color:#fff;
+    background-color:#202020;
+
+    font-size:14pt;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   section{
@@ -35,12 +52,18 @@
     width:100%;
   }
 
+/** SECTIONS **/
+section div.wrapper{
+  margin:0 auto;
+  max-width:760px;
+  margin-top:60px;
+}
+
 /** COVER **/
 section#cover{
 
   iframe{
     max-height:100vh !important;
-
     pointer-events: none;
   }
 
@@ -54,16 +77,18 @@ section#cover{
     width:100%;
     max-width:70%;
     margin:0 auto;
-    height:100%;
+    margin-top:30px;
+    height:85%;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
+
     @media(min-width:760px){
       height:85vh !important;
-      align-items: flex-end !important;
+      align-items: flex-start !important;
     }
 
     img{
@@ -74,8 +99,8 @@ section#cover{
     .text{
 
       height:130px;
+      margin-top:85px;
       text-align: left;
-      vertical-align: top;
 
       font-size:16pt !important;
       font-family:'COCOGOOSE', sans-serif;
@@ -87,7 +112,19 @@ section#cover{
 
 /** MENU **/
   .uk-navbar{
-    height:60px;
+    z-index:2000;
+
+    @media(min-width:760px){
+      height:60px;
+    }
+
+    .uk-navbar-brand{
+      color:$treble-gold;
+      text-shadow: 1px 1px #ddd;
+
+      font-size:16pt !important;
+      font-family:'COCOGOOSE', sans-serif;
+    }
 
     .uk-navbar-nav{
       li{
@@ -100,12 +137,134 @@ section#cover{
           font-size:16pt !important;
           font-family:'COCOGOOSE', sans-serif;
 
+          &:hover{
+            color:#fff;
+            background-color:$treble-gold;
+          }
         }
+      }
+
+      a{
+        font-size:16pt !important;
+        font-family:'COCOGOOSE', sans-serif;
       }
     }
   }
 
   /** ABOUT **/
   section#about{
-    background-color:#444;
+    .about-text{
+
+    }
+  }
+
+  /** AUDITION **/
+  section#audition{
+    background-image:url('../img/cmu-mall.jpg');
+  }
+
+  /** SOCIAL **/
+  section#social{
+     width:100%;
+     height:450px;
+
+     margin-top:60px;
+
+     background-image:url('../img/apples.jpg');
+
+    .social-circles{
+      a{
+        display: block;
+        height:80px;
+        width:80px;
+
+        margin:0 20px;
+        border-radius:50%;
+
+        background-color:$treble-gold;
+
+        color:#fff;
+        text-decoration:none;
+        text-align:center;
+        font-size:45px;
+        line-height:80px;
+
+        &:hover{
+          color:#202020;
+          background-color:#fff;
+        }
+
+      }
+    }
+  }
+
+  /** DATES **/
+  section#dates{
+    .event{
+      .date{
+        float:left;
+        height:100px;
+        width:100px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+
+        padding:10px;
+        border:3px solid $treble-gold;
+
+        font-size:12pt;
+
+        .month, .time{
+          text-transform: uppercase;
+        }
+        .day{
+          font-size:34pt;
+          font-family:'COCOGOOSE', sans-serif;
+        }
+      }
+      .description{
+        float:left;
+
+        margin-left:10px;
+        padding:10px;
+
+        span{
+          color:#ccc;
+          font-size:26px;
+          font-family: 'Source Sans Pro', sans-serif;
+        }
+      }
+    }
+  }
+
+  /** MEDIA **/
+  section#media{
+    .video-player{
+      iframe{
+        border:2px solid $treble-gold;
+      }
+    }
+  }
+
+  /** MEMBERS **/
+  section#members{
+    figure.uk-thumbnail{
+      figcaption{
+        font-size:12pt;
+
+        h3{
+          margin:0;
+        }
+      }
+    }
+  }
+
+  /** FOOTER **/
+  footer{
+    width:100%;
+    height:80px;
+
+    background-color:#1b1b1b;
   }
