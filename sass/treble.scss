@@ -40,8 +40,7 @@ $treble-gold: #d2a63b;
     height:100%;
     width:100%;
 
-    color:#fff;
-    background-color:#202020;
+    background-color:#ececec;
 
     font-size:14pt;
     font-family: 'Source Sans Pro', sans-serif;
@@ -50,17 +49,25 @@ $treble-gold: #d2a63b;
   section{
     position:relative;
     width:100%;
+    padding:40px 0px;
   }
 
-/** SECTIONS **/
-section div.wrapper{
-  margin:0 auto;
-  max-width:760px;
-  margin-top:60px;
-}
+  section div.wrapper{
+    margin:0 auto;
+    max-width:760px;
+  }
+
+  div.divider{
+    content:('');
+    height:350px;
+    width:100%;
+  }
+
 
 /** COVER **/
 section#cover{
+
+  background-color:#0e0e0e;
 
   iframe{
     max-height:100vh !important;
@@ -97,7 +104,6 @@ section#cover{
     }
 
     .text{
-
       height:130px;
       margin-top:85px;
       text-align: left;
@@ -112,7 +118,12 @@ section#cover{
 
 /** MENU **/
   .uk-navbar{
+
     z-index:2000;
+
+    &.uk-active {
+      border-bottom:1px solid #ccc;
+    }
 
     @media(min-width:760px){
       height:60px;
@@ -137,7 +148,7 @@ section#cover{
           font-size:16pt !important;
           font-family:'COCOGOOSE', sans-serif;
 
-          &:hover{
+          &.uk-active, &:hover{
             color:#fff;
             background-color:$treble-gold;
           }
@@ -154,53 +165,27 @@ section#cover{
   /** ABOUT **/
   section#about{
     .about-text{
+      margin-top:30px;
 
+      img{
+        border:2px solid $treble-gold;
+      }
     }
   }
 
   /** AUDITION **/
   section#audition{
-    background-image:url('../img/cmu-mall.jpg');
-  }
-
-  /** SOCIAL **/
-  section#social{
-     width:100%;
-     height:450px;
-
-     margin-top:60px;
-
-     background-image:url('../img/apples.jpg');
-
-    .social-circles{
-      a{
-        display: block;
-        height:80px;
-        width:80px;
-
-        margin:0 20px;
-        border-radius:50%;
-
-        background-color:$treble-gold;
-
-        color:#fff;
-        text-decoration:none;
-        text-align:center;
-        font-size:45px;
-        line-height:80px;
-
-        &:hover{
-          color:#202020;
-          background-color:#fff;
-        }
-
-      }
-    }
   }
 
   /** DATES **/
   section#dates{
+    background-color:#1b1b1b;
+
     .event{
+      margin-bottom:25px;
+
+      color:#fff;
+
       .date{
         float:left;
         height:100px;
@@ -248,8 +233,44 @@ section#cover{
     }
   }
 
+/** SOCIAL **/
+section#social{
+  padding:20px 0px 60px 0px;
+
+  h2{
+    color:#333;
+  }
+
+  .social-circles{
+    a{
+      display: block;
+      height:80px;
+      width:80px;
+
+      margin:0 20px;
+      border-radius:50%;
+
+      background-color:$treble-gold;
+
+      color:#fff;
+      text-decoration:none;
+      text-align:center;
+      font-size:45px;
+      line-height:80px;
+
+      &:hover{
+        color:#202020;
+        background-color:#fff;
+      }
+
+    }
+  }
+}
+
   /** MEMBERS **/
   section#members{
+    background-color:#1b1b1b;
+
     figure.uk-thumbnail{
       figcaption{
         font-size:12pt;
@@ -261,10 +282,17 @@ section#cover{
     }
   }
 
+  /** CONTACT **/
+  section#contact{
+    background-color:#1b1b1b;
+  }
+
   /** FOOTER **/
   footer{
-    width:100%;
-    height:80px;
+    padding:40px 0px 20px 0px;
 
     background-color:#1b1b1b;
+
+    color:#bbb;
+    font-size:10pt;
   }
