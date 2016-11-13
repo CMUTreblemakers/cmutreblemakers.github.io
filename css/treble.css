@@ -178,10 +178,12 @@ section#social {
 /** MEMBERS **/
 section#members {
   background-color: #1b1b1b; }
-  section#members figure.uk-thumbnail figcaption {
-    font-size: 12pt; }
-    section#members figure.uk-thumbnail figcaption h3 {
-      margin: 0; }
+  section#members figure.uk-thumbnail {
+    margin-top: 30px; }
+    section#members figure.uk-thumbnail figcaption {
+      font-size: 12pt; }
+      section#members figure.uk-thumbnail figcaption h3 {
+        margin: 0; }
 
 /** CONTACT **/
 section#contact {
