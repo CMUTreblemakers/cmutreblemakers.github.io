@@ -119,16 +119,31 @@ section#about .about-text {
     border: 2px solid #d2a63b; }
 
 /** AUDITION **/
+section#audition {
+  color: #fff;
+  background-color: #282828; }
+  section#audition #audition-button {
+    background-color: transparent;
+    color: #d2a63b;
+    font-size: 18pt;
+    border: 1px solid #d2a63b; }
+    section#audition #audition-button:hover {
+      color: #fff;
+      border-color: #fff; }
+
 /** DATES **/
 section#dates {
   background-color: #1b1b1b; }
   section#dates .event {
+    display: flex;
+    flex-wrap: nowrap;
     margin-bottom: 25px;
     color: #fff; }
     section#dates .event .date {
-      float: left;
       height: 100px;
+      min-height: 100px;
       width: 100px;
+      min-width: 100px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -142,9 +157,12 @@ section#dates {
         font-size: 34pt;
         font-family: 'COCOGOOSE', sans-serif; }
     section#dates .event .description {
-      float: left;
-      margin-left: 10px;
+      margin-left: 15px;
       padding: 10px; }
+      section#dates .event .description a, section#dates .event .description a:active, section#dates .event .description a:visited {
+        color: #d2a63b; }
+      section#dates .event .description a:hover {
+        color: #fff; }
       section#dates .event .description span {
         color: #ccc;
         font-size: 26px;
@@ -179,6 +197,7 @@ section#social {
 section#members {
   background-color: #1b1b1b; }
   section#members figure.uk-thumbnail {
+    border: 3px solid #d2a63b;
     margin-top: 30px; }
     section#members figure.uk-thumbnail figcaption {
       font-size: 12pt; }
@@ -187,7 +206,23 @@ section#members {
 
 /** CONTACT **/
 section#contact {
-  background-color: #1b1b1b; }
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #1b1b1b;
+  color: #fff;
+  font-size: 20pt;
+  line-height: 25pt;
+  text-align: center; }
+  section#contact p a, section#contact p a:visited, section#contact p a:active {
+    color: #d2a63b; }
+  section#contact #email-button {
+    background-color: transparent;
+    color: #d2a63b;
+    font-size: 20pt;
+    border: 1px solid #d2a63b; }
+    section#contact #email-button:hover {
+      color: #fff;
+      border-color: #fff; }
 
 /** FOOTER **/
 footer {

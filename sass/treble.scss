@@ -175,6 +175,23 @@ section#cover{
 
   /** AUDITION **/
   section#audition{
+    color:#fff;
+    background-color:#282828;
+
+    #audition-button{
+      background-color:transparent;
+
+      color:$treble-gold;
+      font-size:18pt;
+
+      border:1px solid $treble-gold;
+
+      &:hover{
+        color:#fff;
+        border-color:#fff;
+      }
+
+    }
   }
 
   /** DATES **/
@@ -182,14 +199,18 @@ section#cover{
     background-color:#1b1b1b;
 
     .event{
+      display:flex;
+      flex-wrap: nowrap;
+
       margin-bottom:25px;
 
       color:#fff;
 
       .date{
-        float:left;
-        height:100px;
-        width:100px;
+        height: 100px;
+        min-height:100px;
+        width: 100px;
+        min-width:100px;
 
         display:flex;
         flex-direction:column;
@@ -210,10 +231,17 @@ section#cover{
         }
       }
       .description{
-        float:left;
-
-        margin-left:10px;
+        margin-left:15px;
         padding:10px;
+
+        a{
+          &,&:active,&:visited{
+            color:$treble-gold;
+          }
+          &:hover{
+            color:#fff;
+          }
+        }
 
         span{
           color:#ccc;
@@ -272,6 +300,7 @@ section#social{
     background-color:#1b1b1b;
 
     figure.uk-thumbnail{
+      border:3px solid $treble-gold;
       margin-top:30px;
 
       figcaption{
@@ -286,7 +315,35 @@ section#social{
 
   /** CONTACT **/
   section#contact{
+    padding-top:120px;
+    padding-bottom:120px;
+
     background-color:#1b1b1b;
+
+    color:#fff;
+    font-size:20pt;
+    line-height:25pt;
+    text-align: center;
+
+    p a{
+      &,&:visited,&:active{
+        color:$treble-gold;
+      }
+    }
+
+    #email-button{
+      background-color:transparent;
+
+      color:$treble-gold;
+      font-size:20pt;
+
+      border:1px solid $treble-gold;
+
+      &:hover{
+        color:#fff;
+        border-color:#fff;
+      }
+    }
   }
 
   /** FOOTER **/
