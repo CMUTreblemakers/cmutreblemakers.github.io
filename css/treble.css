@@ -120,8 +120,10 @@ section#about .about-text {
 
 /** AUDITION **/
 section#audition {
-  color: #fff;
+  color: #ccc;
   background-color: #282828; }
+  section#audition h2 {
+    color: #ccc; }
   section#audition #audition-button {
     background-color: transparent;
     color: #d2a63b;
@@ -130,6 +132,9 @@ section#audition {
     section#audition #audition-button:hover {
       color: #fff;
       border-color: #fff; }
+    section#audition #audition-button.disabled, section#audition #audition-button.disabled:hover {
+      color: #555;
+      border-color: #555; }
 
 /** DATES **/
 section#dates {

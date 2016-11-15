@@ -175,8 +175,12 @@ section#cover{
 
   /** AUDITION **/
   section#audition{
-    color:#fff;
+    color:#ccc;
     background-color:#282828;
+
+    h2{
+      color:#ccc;
+    }
 
     #audition-button{
       background-color:transparent;
@@ -189,6 +193,11 @@ section#cover{
       &:hover{
         color:#fff;
         border-color:#fff;
+      }
+
+      &.disabled,&.disabled:hover{
+        color:#555;
+        border-color:#555;
       }
 
     }
