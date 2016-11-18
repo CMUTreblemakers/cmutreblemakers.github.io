@@ -234,8 +234,8 @@ section#contact {
   text-align: center; }
   @media (max-width: 768px) {
     section#contact {
-      font-size: 16pt;
-      line-height: 22pt; } }
+      font-size: 14pt;
+      line-height: 20pt; } }
   section#contact p a, section#contact p a:visited, section#contact p a:active {
     color: #d2a63b; }
   section#contact #email-button {
