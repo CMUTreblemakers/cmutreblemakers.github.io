@@ -1,523 +1,461 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
+<!--
+  CMU TREBLEMAKERS WEBSITE
+  COPYRIGHT DEREK BROWN 2016
+  ALL RIGHTS RESERVED.
+-->
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+  <!-- META -->
     <title>CMU Treblemakers A Cappella</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="CMU's Premier Coed A Cappella Group">
+    <meta name="keywords" content="Treblemakers,A Cappella,CMU A Cappella,Carnegie Mellon,Treble Makers">
+    <meta name="author" content="CMU Treblemakers">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta property="og:url"                content="http://www.cmutreblemakers.com" />
+    <meta property="og:title"              content="Treblemakers A Cappella" />
+    <meta property="og:description"        content="CMU's Premier Co-Ed A Cappella Group" />
+    <meta property="og:image"              content="http://cmutreblemakers.com/img/boats.jpg" />
 
-    <!-- Grayscale CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <meta name="theme-color" content="#000000">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+  <!-- UIKIT -->
+    <!-- Core -->
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/uikit/js/uikit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/uikit/css/uikit.min.css">
 
-    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+    <!-- Sticky Menu -->
+    <script type="text/javascript" src="lib/uikit/js/components/sticky.min.js"></script>
 
+    <!-- Parallax Image -->
+    <script type="text/javascript" src="lib/uikit/js/components/parallax.min.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/treble.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
 </head>
+<body>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- COVER VIDEO -->
+  <section id="cover">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img id="logo" src="img/clef-gold.png" alt="home-icon" height="100" style="PADDING-TOP: 10px"/>
-                </a>
-            </div>
+    <!-- Cover Video on Large Devices -->
+    <iframe id="cover_video" class="uk-hidden-small" src="https://www.youtube.com/embed/P_kIDsF_ziY?rel=0&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;playlist=P_kIDsF_ziY" width="100%" height="750px" frameborder="0" volume="0" allowfullscreen></iframe>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#audition">Audition</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#upcoming">Upcoming Dates</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#members">Members</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#media">Media</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <!-- Cover Photo on Small Devices -->
+    <img id="cover_photo" class="uk-visible-small" src="img/cover.jpg" width="100%"/>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-md-offset-0">
-                        <h1 class="brand-heading">CMU TREBLEMAKERS</h1>
-                        <p class="intro-text">Competitive Co-ed A Cappella</p>
+    <div class="cover_title">
+      <img src="img/logo.png" />
+      <div class="text uk-hidden-small">
+          Co-Ed.</br>
+          Competitive.</br>
+          A Cappella.
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <nav id="nav" class="uk-navbar" data-uk-sticky="{boundary: true}" style="z-index:1000;" data-uk-scrollspy-nav="{smoothscroll:true, topoffset: -60}">
+      <div class="uk-flex uk-flex-center">
+
+        <!-- Desktop Menu -->
+        <ul class="uk-navbar-nav uk-hidden-small">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#audition">AUDITION</a></li>
+            <li><a href="#dates">DATES</a></li>
+            <li><a href="#media">MEDIA</a></li>
+            <li><a href="#members">MEMBERS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <!-- Mobile Menu -->
+          <ul class="uk-navbar-nav uk-visible-small">
+            <a href="" class="uk-navbar-brand">TREBLEMAKERS</a>
+          </ul>
+
+          <div class="uk-navbar-flip uk-visible-small">
+            <ul class="uk-navbar-nav">
+                <li class="uk-parent" data-uk-dropdown="{justify:'#nav'}">
+
+                    <a class="uk-navbar-toggle"></a>
+
+                    <!-- This is the dropdown -->
+                    <div class="uk-dropdown uk-dropdown-navbar">
+                        <ul class="uk-nav uk-nav-navbar">
+                          <li><a href="#about">ABOUT</a></li>
+                          <li><a href="#audition">AUDITION</a></li>
+                          <li><a href="#dates">DATES</a></li>
+                          <li><a href="#media">MEDIA</a></li>
+                          <li><a href="#members">MEMBERS</a></li>
+                          <li><a href="#contact">CONTACT</a></li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h2>We are pretty great.</h2>
-                <img src="img/trebles-boats.jpg" alt="" style="width:80%;">
-                <br><br>
-                <p>
-       			We’re the Treblemakers, an award-winning co-ed a cappella group at Carnegie Mellon. Founded in 2010, we’ve quickly grown into a musical force to be reckoned with. We host CMU’s Almost Midnight A Cappella Concert every spring and regularly compete in the International Championship of Collegiate A Cappella. We pride ourselves on being one of the most fun ­loving groups on campus and we push ourselves to be the best we can be.
-       			</p>
-       			<p>
-       			At heart, we’re a close knit group of friends who love to share our passion with each other and our community. Treblemakers is a group for all kinds of singers and all styles of music, and we work together to bring our visions to life. We love new friends, so if you’re interested in singing with us, want us to perform for you, or have any questions, just let us know. We’d love to make treble with you!
-				</p>
-                <h3>Awards</h3><br><br>
-                <img src="img/choreo-wreath-2016.png" alt="" style="width:30%;">
-                <br><br>
-                <img src="img/soloist-wreath-2015.png" alt="" style="width:30%;">
-                <img src="img/thirdplace-wreath-2015.png" alt="" style="width:30%;">
-                <img src="img/choreo-wreath-2015.png" alt="" style="width:30%;">
-                <br><br>
-                <img src="img/soloist-wreath-2014.png" alt="" style="width:30%;">
-                <br><br><br>
-            </div>
-        </div>
-    </section>
-
-    <!-- Audition Section -->
-    <section id="audition" class="content-section text-center">
-        <div class="audition-section" style="height:auto; background-size:contain; background-position:center top;">
-            <div class="container">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <h2>You are pretty great.</h2>
-                    <p style="text-align:left;">Auditions are from September 8th to September 11th.  Slots are filling up fast- so be sure to sign up soon using the link below!</p>
-
-                    <h3>What to Expect</h3>
-                    <p style="text-align:left;">Please prepare a verse and a chorus from a song that shows off your voice. We’ll take you through a vocal range exercise and there will be an optional sight reading component. We’re looking for all kinds of talent; so if you beatbox, arrange, choreograph, or have leadership experience, be sure to tell us about it. Send us an email if you have any questions. Relax, we can’t wait to meet you! </p>
-
-                    <p>
-                      <center><a href="http://audition.cmuacappella.org/treblemakers" class="btn btn-lg btn-default" style="background-color:#000;">Sign Up!</a></center>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        </br>
-    </section>
-
-    <!-- Upcoming Dates Section -->
-    <section id="upcoming" class="container content-section text-center">
-        <div class="upcoming-section">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <br><br>
-                    <h2>Upcoming Dates</h2>
-                </div>
-            </div>
-            <div class="row">
-            	<div class="col-sm-3 col-sm-offset-2">
-           			<h4>September 7th</h4>
-         		   	<p>4:30-6:30 PM</p>
-            	</div>
-            	<div class="col-sm-5 col-sm-offset-0">
-            		<h3 >Activities Fair | CFA Lawn </h3>
-            		<p>
-            			Interested in auditioning for us? Come talk to us at the Activities Fair and learn more about Treblemakers and sign up for an audition!
-            		</p>
-            	</div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3 col-sm-offset-2">
-                    <h4>October 15th</h4>
-                    <p>7:00 PM</p>
-                </div>
-                <div class="col-sm-5 col-sm-offset-0">
-                    <h3 >AcaPittsburgh | Rangos Ballroom </h3>
-                    <p>
-                      Join us and the rest of Carnegie Mellon A Cappella for our first show of the year!
-                    </p>
-                </div>
-            </div>
-            <!-- <div class="row">
-                <div class="col-sm-3 col-sm-offset-2">
-                    <h4>February 26th</h4>
-                    <p>7:00 PM</p>
-                </div>
-                <div class="col-sm-5 col-sm-offset-0">
-                    <h3>CIT Ball | Phipps Conservatory</h3>
-                    <p>
-                    Celebrate the hard work of CMU's Carnegie Institute of Technology with good food and music! Tickets are already sold out for this exclusive event, but keep an eye out for us if you're already going.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3 col-sm-offset-2">
-                    <h4>February 26th</h4>
-                    <p>8:00 PM</p>
-                </div>
-                <div class="col-sm-5 col-sm-offset-0">
-                    <h3>AcaSlam | University of Pittsburgh Scaife Hall</h3>
-                    <p>
-                    AcaSlam is a benefit concert hosted by C Flat Run of the University of Pittsburgh. This year, they've invited us to perform alongside them, as well as the Michigan G-Men and Vocal Point. Tickets available at the door: $3 for students, $10 for adults.
-                    </p>
-                </div>
-            </div> -->
-        </div>
-    </section>
-
-    <!-- Members Section -->
-    <section id="members" class="content-section text-center" style="max-width:1200px; margin: 0 auto;">
-        <div class="members-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h2>Our amazing members</h2>
-                        <br>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/afabraha.jpg" onmouseover="this.src='img/members/afabraha_mo.jpg'" onmouseout="this.src='img/members/afabraha.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>Andrew Abrahamsen</h4>
-                            <p class="text-muted">
-                            Bass
-                            <br>
-                            Music Composition <b>2018</b>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/ajanders.jpg" onmouseover="this.src='img/members/ajanders_mo.jpg'" onmouseout="this.src='img/members/ajanders.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>Allison Anderson | Music Director </h4>
-                            <p class="text-muted">
-                            Soprano
-                            <br>
-                            Vocal Performance <b>2017</b>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/ambikac.jpg" onmouseover="this.src='img/members/ambikac_mo.jpg'" onmouseout="this.src='img/members/ambikac.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>Ambika Chetal | Secretary</h4>
-                            <p class="text-muted">
-                            Alto
-                            <br>
-                            Chemistry <b>2019</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/cmaggio.jpg" onmouseover="this.src='img/members/cmaggio_mo.jpg'" onmouseout="this.src='img/members/cmaggio.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>Connor Maggio</h4>
-                            <p class="text-muted">
-                            Tenor
-                            <br>
-                            Civil Engineering <b>2019</b>
-                            <br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/davonneh.jpg" onmouseover="this.src='img/members/davonneh_mo.jpg'" onmouseout="this.src='img/members/davonneh.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>DaVonne Henry</h4>
-                            <p class="text-muted">
-                            Bass
-                            <br>
-                            Mechanical Engineering <b>2018</b>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                  	  <div class="team-member">
-                   		 <img src="img/members/derekbro.jpg" onmouseover="this.src='img/members/derekbro_mo.jpg'" onmouseout="this.src='img/members/derekbro.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                  		  <h4>Derek Brown | Technical Director </h4>
-                  		  <p class="text-muted">
-                  			  Tenor/Vocal Percussion
-                   			 <br>
-                   			 Computer Science <b>2019</b>
-                   		  </p>
-            	        </div>
-                    </div>
-               	</div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/jnapolit.jpg" onmouseover="this.src='img/members/jnapolit_mo.jpg'" onmouseout="this.src='img/members/jnapolit.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>Julia Napolitano | Vice-President</h4>
-                            <p class="text-muted">
-                            Soprano
-                            <br>
-                            Chemical Engineering <b>2018</b>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/kborst.jpg" onmouseover="this.src='img/members/kborst.jpg'" onmouseout="this.src='img/members/kborst.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>Kate Borst</h4>
-                            <p class="text-muted">
-                            Soprano
-                            <br>
-                            Mathematics <b>2017</b>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                   	 <div class="team-member">
-                    	<img src="img/members/rhenke.jpg" onmouseover="this.src='img/members/rhenke_mo.jpg'" onmouseout="this.src='img/members/rhenke.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                    	<h4>Reagan Henke | President</h4>
-                  		<p class="text-muted">
-                   		 Alto
-                   		 <br>
-                  		 SHS <b>2017</b>
-                  		 </p>
-                     </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/rholbert.jpg" onmouseover="this.src='img/members/rholbert_mo.jpg'" onmouseout="this.src='img/members/rholbert.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>Russell Holbert</h4>
-                            <p class="text-muted">
-                            Baritone
-                            <br>
-                            Vocal Performance <b>2018</b>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/syort.jpg" onmouseover="this.src='img/members/syort_mo.jpg'" onmouseout="this.src='img/members/syort.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>Sage Yort | Assistant Music Director </h4>
-                            <p class="text-muted">
-                            Alto
-                            <br>
-                            Chemical Engineering <b>2017</b>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/zhaodonz.jpg" onmouseover="this.src='img/members/zhaodonz_mo.jpg'" onmouseout="this.src='img/members/zhaodonz.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>Don Zheng</h4>
-                            <p class="text-muted">
-                            Tenor
-                            <br>
-                            Electrical and Computer Engineering <b>2017</b>
-                            </p>
-                        </div>
-                    </div>
-                 </div>
-                 <div class="row">
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="img/members/zherman.jpg" onmouseover="this.src='img/members/zherman_mo.jpg'" onmouseout="this.src='img/members/zherman.jpg'" class="img-responsive img-circle"  alt="" style="width:250px;">
-                            <h4>Zach Herman</h4>
-                            <p class="text-muted">
-                            Tenor
-                            <br>
-                            Musical Theatre <b>2019</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Media Section -->
-    <section id="media" class="container content-section text-center">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h2>Media</h2>
-                <p>Hit us up on social media!</p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://www.facebook.com/CMUTreblemakers" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/user/treblemakerscmu" class="btn btn-default btn-lg"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube</span></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/CMUTreblemakers" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/cmutreblemakers" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
-                    </li> <br> <br>
-                    <h3>Some of our recent performances</h3>
-                    <br><br>
-                    <div id="myCarousel" class="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/8RCaBgdIRCE" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="item active">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2iogmzdp0KY" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="item">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Wh6AScF8UYI" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Officers -->
-    <section id="officers" class="container content-section text-left">
-      <center><h2>Officers</h2></center>
-
-          <div class="row">
-              <div class="col-sm-4 col-sm-offset-2">
-                    <h3>President</h3>
-                    <p>Reagan Henke </p>
-                    <h3>Vice President</h3>
-                    <p>Julia Napolitano</p>
-                    <h3>Secretary</h3>
-                    <p>Ambika Chetal</p>
-
-                </div>
-                <div class="col-sm-4">
-                  <h3>Music Director</h3>
-                  <p>Allison Anderson</p>
-                  <h3>Assistant Music Director</h3>
-                  <p>Sage Yort</p>
-                  <h3>Technical Director</h3>
-                  <p>Derek Brown</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-left">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h2>Contact Us</h2>
-
-                      <div class="response">
-                      </div>
-
-                      <form name="sentMessage" id="contactForm" novalidate="">
-                          <div class="control-group form-group">
-                              <div class="controls">
-                                  <label>Name:</label>
-                                  <input class="form-control" id="name" required="" data-validation-required-message="Please enter your name." type="text">
-                                  <p class="help-block"></p>
-                              </div>
-                          </div>
-                          <div class="control-group form-group">
-                              <div class="controls">
-                                  <label>Email Address:</label>
-                                  <input class="form-control" id="email" required="" data-validation-required-message="Please enter your email address." type="email">
-                              <div class="help-block"></div></div>
-                          </div>
-                          <div class="control-group form-group">
-                              <div class="controls">
-                                  <label>Message:</label>
-                                  <textarea aria-invalid="false" rows="10" cols="100" class="form-control" id="message" required="" data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-                              <div class="help-block"></div></div>
-                          </div>
-
-                          <center><button id="treble-contact-button" class="btn btn-default">Send Message</button></center>
-                      </form>
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-5 text-left col-sm-offset-1">
-              <p><a href="http://github.com/cmutreblemakers" class="btn btn-default">Copyright &copy; CMU Treblemakers 2016</a></p>
-
-            </div>
-            <div class="col-sm-5 text-right">
-              <p><a href="mailto:contact@cmutreblemakers.com" class="btn btn-default">contact@cmutreblemakers.com</a></p>
-            </div>
-            <div class="col-sm-1"></div>
+                </li>
+            </ul>
           </div>
-    </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+      </div>
+  </nav>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrapper">
+      <div class="uk-grid">
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+          <div class="about-text uk-width-1-1">
+            <h1>WE ARE PRETTY GREAT</h1>
+              <img src="img/about.jpg" />
+              <p>
+                We’re the Treblemakers, an award-winning co-ed a cappella group at Carnegie Mellon. Founded in 2010, we’ve quickly grown into a musical force to be reckoned with. We host CMU’s Almost Midnight A Cappella Concert every spring and regularly compete in the International Championship of Collegiate A Cappella. We pride ourselves on being one of the most fun ­loving groups on campus and we push ourselves to be the best we can be.
+              </p>
+              <p>
+                At heart, we’re a close knit group of friends who love to share our passion with each other and our community. Treblemakers is a group for all kinds of singers and all styles of music, and we work together to bring our visions to life. We love new friends, so if you’re interested in singing with us, want us to perform for you, or have any questions, just let us know. We’d love to make Treble with you!
+              </p>
+          </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+  <!-- DIVIDER -->
+  <div class="divider" style="background-image:url('img/icca.jpg');" data-uk-parallax="{bg: '-450,-100'}"></div>
 
-    <!-- Contact Form Javascript -->
-    <script src="js/treble.js"></script>
+  <!-- AUDITION -->
+  <section id="audition">
+    <div class="wrapper">
+      <h1> YOU ARE PRETTY GREAT </h1>
+      <p>
+        Auditions are held at the beginning of each academic year (usually early September).  Auditions are closed for this year- but stay tuned for auditions next year.
+      </p>
+
+      <h2>WHAT TO EXPECT</h2>
+      <p>
+      Please prepare a verse and a chorus from a song that shows off your voice. We’ll take you through a vocal range exercise and there will be an optional sight reading component. We’re looking for all kinds of talent; so if you beatbox, arrange, choreograph, or have leadership experience, be sure to tell us about it. Send us an email if you have any questions. Relax, we can’t wait to meet you!
+      </p>
+
+      <center><a id="audition-button" class="uk-button uk-button-large disabled">Auditions Closed</a></center>
+    </div>
+  </section>
+
+  <!-- DATES -->
+  <section id="dates">
+    <div class="wrapper">
+
+      <h1> UPCOMING DATES </h1>
+      <div class="uk-grid">
+
+        <div class="event uk-width-1-1">
+          <div class="date">
+            <div class="month">November</div>
+            <div class="day">20</div>
+            <div class="time">4:00PM</div>
+          </div>
+          <div class="description">
+            <h2>Symphony Splendor <span> | Mt. Lebanon </span> </h2>
+            Treble will be performing as part of a historic home tour benefitting the Pittsburgh Symphony Orchestra.  More information <a href="https://www.showclix.com/event/symphony-splendor">here</a>.
+          </div>
+        </div>
+
+        <div class="event uk-width-1-1">
+          <div class="date">
+            <div class="month">December</div>
+            <div class="day">13</div>
+            <div class="time">10:00PM</div>
+          </div>
+          <div class="description">
+            <h2>Almost Midnight A Cappella <span> | CUC McConomy </span> </h2>
+            We will join Soundbytes in performing at CMU's twice annual Almost Midnight Breakfast, a celebration during the beginning of finals week.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider" style="background-image:url('img/cmu-mall.jpg');" data-uk-parallax="{bg: '-450,-100'}"></div>
+
+  <!-- MEDIA -->
+  <section id="media">
+    <div class="wrapper">
+
+      <h1> MEDIA </h1>
+
+      <div class="uk-grid video-player">
+        <div class="uk-width-1-1">
+          <iframe width="100%" height="540" src="https://www.youtube.com/embed/videoseries?list=PLleQ9j2L9YFiahNP3fiJEZjg31W0eBwhC" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section id="social">
+      <center><h2> Follow us! </h2></center>
+      <div class="social-circles uk-flex uk-flex-center">
+        <a href="https://www.facebook.com/CMUTreblemakers">
+          <i class="uk-icon-facebook"></i>
+        </a>
+        <a href="https://twitter.com/cmutreblemakers">
+          <i class="uk-icon-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/cmutreblemakers/">
+          <i class="uk-icon-instagram"></i>
+        </a>
+        <a href="https://www.snapchat.com/add/cmutreblemakers">
+          <i class="uk-icon-snapchat"></i>
+        </a>
+      </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider" style="background-image:url('img/apples.jpg');" data-uk-parallax="{bg: '-350,0'}"></div>
+
+  <!-- MEMBER -->
+  <section id="members">
+    <div class="wrapper">
+
+      <h1> OUR AMAZING MEMBERS </h1>
+
+      <!-- First Row -->
+      <div class="uk-grid" data-uk-grid-match="{row: false}">
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/aabrah.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Andrew Abrahamson </h3>
+                  Vocal Composition 2018</br>
+                  Baritone
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/aanders.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Allison Anderson </h3>
+                  Vocal Performance 2017</br>
+                  Soprano &amp; Music Director
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/achetal.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Ambika Chetal </h3>
+                  Chemistry 2019 </br>
+                  Alto &amp; Secretary
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/cmaggio.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Connor Maggio </h3>
+                  Civil Engineering 2019 </br>
+                  Tenor
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/dbrennan.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Dan Brennan </h3>
+                  Vocal Performance 2019 </br>
+                  Tenor
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/dbrown.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Derek Brown </h3>
+                  Computer Science 2019 </br>
+                  Vocal Percussonist &amp; Tech Director
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/dhenry.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> DaVonne Henry </h3>
+                  Mechanical Engineering 2019 </br>
+                  Bass
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/dmoses.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Drew Moses </h3>
+                  Physics 2019 </br>
+                  Baritone
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/dybun.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Doyee Byun </h3>
+                  Physics 2018 </br>
+                  Baritone
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/dzheng.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Don Zheng </h3>
+                  Electrical and Computer Engineering </br>
+                  Tenor
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/eelrod.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Elizabeth Elrod </h3>
+                  Engineering and Public Policy 2019 </br>
+                  Soprano
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/jnapolit.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Julia Naplitano </h3>
+                  Chemical and Biomedical Engineering 2018 </br>
+                  Soprano &amp; Vice President
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/kborst.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Kate Borst </h3>
+                  Mathematics 2017 </br>
+                  Soprano
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/kraman.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Krishna Ramanan </h3>
+                  Vocal Performance 2020 </br>
+                  Tenor
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/lwholey.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Lauren Wholey </h3>
+                  Dietrich 2020 </br>
+                  Alto
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/rhenke.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Reagan Henke </h3>
+                  Psychology 2017 </br>
+                  Alto &amp; President
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/syort.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Sage Yort </h3>
+                  Chemical Engineering 2017 </br>
+                  Alto &amp; Assistant Music Director
+              </figcaption>
+          </figure>
+        </div>
+
+        <div class="uk-width-1-2 uk-width-medium-1-3">
+          <figure class="uk-thumbnail">
+              <img src="img/members/zherman.sm.jpg" />
+              <figcaption class="uk-thumbnail-caption">
+                  <h3> Zach Herman </h3>
+                  Musical Theater 2019 </br>
+                  Tenor
+              </figcaption>
+          </figure>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrapper">
+
+      <h1> CONTACT </h1>
+      <p style="margin-bottom:25px">
+        Interested in a performance from the Treblemakers?<br>
+        Want more information about auditions?<br>
+      </p>
+      <p>
+        We would love to hear from you!<br>
+      </p>
+      <br>
+      <a href="mailto:contact@cmutreblemakers.com" id="email-button" class="uk-button uk-button-large">contact@cmutreblemakers.com</a>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <center>Copyright &copy; CMU Treblemakers 2016.  All rights reserved. </center>
+  </footer>
 
 </body>
 

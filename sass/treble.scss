@@ -1,0 +1,398 @@
+/**
+  CMU TREBLEMAKERS WEBSITE
+  COPYRIGHT DEREK BROWN 2016
+  ALL RIGHTS RESERVED.
+**/
+
+/** VARIABLES **/
+$treble-gold: #d2a63b;
+
+/** FONTS **/
+  @font-face {
+  	font-family: 'COCOGOOSE';
+  	src: url('font/COCOGOOSE.eot');
+  	src: local('COCOGOOSE'),
+  		url('font/COCOGOOSE.eot?#iefix') format('embedded-opentype'),
+  		url('font/COCOGOOSE.woff') format('woff'),
+  		url('font/COCOGOOSE.ttf') format('truetype'),
+  		url('font/COCOGOOSE.svg#COCOGOOSE') format('svg');
+  	font-weight: normal;
+  	font-style: normal;
+  }
+
+  h1,h2 {
+    font-family:'COCOGOOSE', sans-serif;
+  }
+
+  h1{
+    color:#D2963B;
+  }
+
+  h2{
+    color:#fff;
+  }
+
+/** BODY **/
+  body{
+    margin:0;
+    padding:0;
+    top:0;left:0;right:0;bottom:0;
+    height:100%;
+    width:100%;
+
+    background-color:#ececec;
+
+    font-size:14pt;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  section{
+    position:relative;
+    width:100%;
+
+    box-sizing: border-box;
+    padding:40px 0px;
+
+    @media(max-width:768px){
+      padding:40px 20px;
+    }
+  }
+
+  section div.wrapper{
+    margin:0 auto;
+    max-width:768px;
+  }
+
+  div.divider{
+    content:('');
+    height:350px;
+    width:100%;
+  }
+
+
+/** COVER **/
+section#cover{
+
+  background-color:#0e0e0e;
+
+  iframe{
+    max-height:100vh !important;
+    pointer-events: none;
+  }
+
+  .cover_title{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+
+    width:100%;
+    max-width:70%;
+    margin:0 auto;
+    margin-top:30px;
+    height:85%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    @media(min-width:768px){
+      height:85vh !important;
+      align-items: flex-start !important;
+    }
+
+    img{
+      width:400px;
+      max-width:80%;
+    }
+
+    .text{
+      height:130px;
+      margin-top:85px;
+      text-align: left;
+
+      font-size:16pt !important;
+      font-family:'COCOGOOSE', sans-serif;
+      color:#fff !important;
+    }
+  }
+
+}
+
+/** MENU **/
+  .uk-navbar{
+    z-index:2000;
+    background-color:#f5f5f5;
+
+    &.uk-active {
+      border-bottom:1px solid #ccc;
+    }
+
+    .uk-navbar-brand{
+      height:60px;
+
+      line-height:60px;
+      color:$treble-gold;
+      text-shadow: 1px 1px #ddd;
+      font-size:16pt !important;
+      font-family:'COCOGOOSE', sans-serif;
+    }
+
+    .uk-navbar-nav{
+
+      @media(max-width:768px){
+        width:100% !important;
+      }
+
+      li{
+        height:60px;
+
+        a {
+          height:60px;
+          line-height:60px;
+
+          font-size:16pt !important;
+          font-family:'COCOGOOSE', sans-serif;
+
+          &.uk-active, &:hover{
+            color:#fff;
+            background-color:$treble-gold;
+          }
+        }
+      }
+
+      a{
+        font-size:16pt !important;
+        font-family:'COCOGOOSE', sans-serif;
+      }
+    }
+  }
+
+  /** ABOUT **/
+  section#about{
+    .about-text{
+      margin-top:30px;
+
+      img{
+        border:2px solid $treble-gold;
+      }
+    }
+  }
+
+  /** AUDITION **/
+  section#audition{
+    color:#ccc;
+    background-color:#282828;
+
+
+    h2{
+      color:#ccc;
+    }
+
+    #audition-button{
+      background-color:transparent;
+
+      color:$treble-gold;
+      font-size:18pt;
+
+      border:1px solid $treble-gold;
+
+      &:hover{
+        color:#fff;
+        border-color:#fff;
+      }
+
+      &.disabled,&.disabled:hover{
+        color:#555;
+        border-color:#555;
+      }
+
+    }
+  }
+
+  /** DATES **/
+  section#dates{
+    background-color:#1b1b1b;
+
+    .event{
+      display:flex;
+      flex-wrap: nowrap;
+
+      margin-bottom:25px;
+
+      color:#fff;
+
+      .date{
+        height: 100px;
+        min-height:100px;
+        width: 100px;
+        min-width:100px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+
+        padding:10px;
+        border:3px solid $treble-gold;
+
+        font-size:12pt;
+
+        .month, .time{
+          text-transform: uppercase;
+        }
+        .day{
+          font-size:34pt;
+          font-family:'COCOGOOSE', sans-serif;
+        }
+      }
+      .description{
+        margin-left:15px;
+        padding:10px;
+
+        a{
+          &,&:active,&:visited{
+            color:$treble-gold;
+          }
+          &:hover{
+            color:#fff;
+          }
+        }
+
+        span{
+          color:#ccc;
+          font-size:26px;
+          font-family: 'Source Sans Pro', sans-serif;
+        }
+      }
+    }
+  }
+
+  /** MEDIA **/
+  section#media{
+    .video-player{
+      iframe{
+        border:2px solid $treble-gold;
+      }
+    }
+  }
+
+/** SOCIAL **/
+section#social{
+  padding:20px 0px 60px 0px;
+
+  h2{
+    color:#333;
+  }
+
+  .social-circles{
+
+    a{
+      display: block;
+      height:80px;
+      width:80px;
+
+      margin:0px 20px;
+      border-radius:50%;
+
+      background-color:$treble-gold;
+
+      color:#fff;
+      text-decoration:none;
+      text-align:center;
+      font-size:45px;
+      line-height:80px;
+
+      &:hover{
+        color:#202020;
+        background-color:#fff;
+      }
+
+    }
+
+    @media(max-width:768px){
+      -ms-flex-pack: distribute !important;
+      -webkit-justify-content: space-around !important;
+      justify-content: space-around !important;
+
+      a{
+        margin: 0 !important;
+      }
+    }
+
+  }
+}
+
+  /** MEMBERS **/
+  section#members{
+    background-color:#1b1b1b;
+
+    figure.uk-thumbnail{
+      border:3px solid $treble-gold;
+      margin-top:30px;
+
+      figcaption{
+        font-size:12pt;
+
+        h3{
+          margin:0;
+        }
+      }
+    }
+  }
+
+  /** CONTACT **/
+  section#contact{
+    padding-top:120px;
+    padding-bottom:120px;
+
+    background-color:#1b1b1b;
+
+    color:#fff;
+    font-size:20pt;
+    line-height:25pt;
+    text-align: center;
+
+    @media(max-width:768px){
+      font-size:14pt;
+      line-height:20pt;
+    }
+
+
+    p a{
+      &,&:visited,&:active{
+        color:$treble-gold;
+      }
+    }
+
+    #email-button{
+      background-color:transparent;
+
+      color:$treble-gold;
+      font-size:20pt;
+
+      @media(max-width:768px){
+        font-size:16pt;
+      }
+
+      border:1px solid $treble-gold;
+
+      &:hover{
+        color:#fff;
+        border-color:#fff;
+      }
+    }
+  }
+
+  /** FOOTER **/
+  footer{
+    padding:40px 0px 20px 0px;
+
+    background-color:#1b1b1b;
+
+    color:#bbb;
+    font-size:10pt;
+  }

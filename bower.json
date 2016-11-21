@@ -1,0 +1,22 @@
+{
+  "name": "treblemakers",
+  "description": "Website for CMU Treblemakers A Cappella Group",
+  "main": "gulpfile.js",
+  "authors": [
+    "Derek Brown"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "a",
+    "cappella"
+  ],
+  "homepage": "https://github.com/CMUTreblemakers/website",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
