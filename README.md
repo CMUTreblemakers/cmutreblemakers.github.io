@@ -5,7 +5,7 @@ Hello Future Treble Technical Director!
 My name is Derek, I was once the Treble Technical Director, but now I am once
 upon a Treble.  I am writing this to explain the features of the Treble website.
 
-- The treble website is hosted on GoDaddy, paid for by the University.  This is where DNS managment is performed.
+- The treble domain is registered on GoDaddy, paid for by the University.  This is where DNS managment is performed.
 - The site itself is hosted using GitHub pages (ie cmutreblemakers.github.io) using a custom domain.
   - I have written a Gulp script to simplify many of the recurring processes,
 like compiling sass and compressing images.  To use it, simply install and
