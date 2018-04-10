@@ -365,7 +365,11 @@ section#social{
   /** MEMBERS **/
   section#members{
     background-color:#1b1b1b;
-    color: #fff;
+    color: #ccc;
+
+    h2{
+      color: #fff
+    }
 
     figure.uk-thumbnail{
       border:3px solid $treble-gold;
