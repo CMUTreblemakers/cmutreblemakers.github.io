@@ -114,8 +114,8 @@ section#cover .cover_title .text {
   border-bottom: 1px solid #ccc;
 }
 .uk-navbar .uk-navbar-brand {
-  height: 60px;
-  line-height: 60px;
+  height: 45px;
+  line-height: 45px;
   color: #d2a63b;
   text-shadow: 1px 1px #ddd;
   font-size: 16pt !important;
@@ -126,12 +126,13 @@ section#cover .cover_title .text {
     width: 100% !important;
   }
 }
+
 .uk-navbar .uk-navbar-nav li {
-  height: 60px;
+  height: 35px;
 }
 .uk-navbar .uk-navbar-nav li a {
-  height: 60px;
-  line-height: 60px;
+  height: 35px;
+  line-height: 37px;
   font-size: 16pt !important;
   font-family: "COCOGOOSE", sans-serif;
 }
