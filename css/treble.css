@@ -8,16 +8,21 @@
 @font-face {
   font-family: "COCOGOOSE";
   src: url("font/COCOGOOSE.eot");
-  src: local("COCOGOOSE"), url("font/COCOGOOSE.eot?#iefix") format("embedded-opentype"), url("font/COCOGOOSE.woff") format("woff"), url("font/COCOGOOSE.ttf") format("truetype"), url("font/COCOGOOSE.svg#COCOGOOSE") format("svg");
+  src: local("COCOGOOSE"),
+    url("font/COCOGOOSE.eot?#iefix") format("embedded-opentype"),
+    url("font/COCOGOOSE.woff") format("woff"),
+    url("font/COCOGOOSE.ttf") format("truetype"),
+    url("font/COCOGOOSE.svg#COCOGOOSE") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-h1, h2 {
+h1,
+h2 {
   font-family: "COCOGOOSE", sans-serif;
 }
 
 h1 {
-  color: #D2963B;
+  color: #d2963b;
 }
 
 h2 {
@@ -136,7 +141,8 @@ section#cover .cover_title .text {
   font-size: 16pt !important;
   font-family: "COCOGOOSE", sans-serif;
 }
-.uk-navbar .uk-navbar-nav li a.uk-active, .uk-navbar .uk-navbar-nav li a:hover {
+.uk-navbar .uk-navbar-nav li a.uk-active,
+.uk-navbar .uk-navbar-nav li a:hover {
   color: #fff;
   background-color: #d2a63b;
 }
@@ -171,7 +177,8 @@ section#audition #audition-button:hover {
   color: #fff;
   border-color: #fff;
 }
-section#audition #audition-button.disabled, section#audition #audition-button.disabled:hover {
+section#audition #audition-button.disabled,
+section#audition #audition-button.disabled:hover {
   color: #555;
   border-color: #555;
 }
@@ -199,7 +206,8 @@ section#dates .event .date {
   border: 3px solid #d2a63b;
   font-size: 12pt;
 }
-section#dates .event .date .month, section#dates .event .date .time {
+section#dates .event .date .month,
+section#dates .event .date .time {
   text-transform: uppercase;
 }
 section#dates .event .date .day {
@@ -210,7 +218,9 @@ section#dates .event .description {
   margin-left: 15px;
   padding: 10px;
 }
-section#dates .event .description a, section#dates .event .description a:active, section#dates .event .description a:visited {
+section#dates .event .description a,
+section#dates .event .description a:active,
+section#dates .event .description a:visited {
   color: #d2a63b;
 }
 section#dates .event .description a:hover {
@@ -273,17 +283,20 @@ section#social .mailing-list #mc_embed_signup_scroll input {
   line-height: 30px;
   font-size: 18px;
 }
-section#social .mailing-list #mc_embed_signup_scroll input[type=email] {
+section#social .mailing-list #mc_embed_signup_scroll input[type="email"] {
   padding: 2px 5px 2px 5px;
 }
-section#social .mailing-list #mc_embed_signup_scroll input[type=submit] {
+section#social .mailing-list #mc_embed_signup_scroll input[type="submit"] {
   color: #fff;
   background-color: #d2a63b;
   padding: 2px 10px 0px 10px;
   margin: 2px 0px 0px 10px;
   border: none;
 }
-section#social .mailing-list #mc_embed_signup_scroll input[type=submit]:hover {
+section#social
+  .mailing-list
+  #mc_embed_signup_scroll
+  input[type="submit"]:hover {
   color: #000;
   background-color: #fff;
 }
@@ -299,12 +312,23 @@ section#members h2 {
 section#members figure.uk-thumbnail {
   border: 3px solid #d2a63b;
   margin-top: 30px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
 }
 section#members figure.uk-thumbnail figcaption {
   font-size: 12pt;
 }
 section#members figure.uk-thumbnail figcaption h3 {
   margin: 0;
+}
+
+section#members figure.uk-thumbnail img {
+  border: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 
 /** CONTACT **/
@@ -323,7 +347,9 @@ section#contact {
     line-height: 20pt;
   }
 }
-section#contact p a, section#contact p a:visited, section#contact p a:active {
+section#contact p a,
+section#contact p a:visited,
+section#contact p a:active {
   color: #d2a63b;
 }
 section#contact #email-button {
